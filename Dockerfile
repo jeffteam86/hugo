@@ -28,6 +28,6 @@ COPY --from=build /go/bin/hugo /hugo
 ARG  WORKDIR="/site"
 WORKDIR ${WORKDIR}
 VOLUME  ${WORKDIR}
-EXPOSE  80
+EXPOSE  1313
 ENTRYPOINT [ "/hugo" ]
 CMD [ "--help" ]
